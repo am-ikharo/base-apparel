@@ -15,8 +15,15 @@
 .left-side {
     width: 50%;
     background-image: url(./images/bg-pattern-desktop.svg);
-    padding: 50px 100px;
+    padding: 70px 150px;
+    
 }
+
+.header {
+    margin-bottom: 50px;
+}
+
+
 
 .mobile-img-container {
     display: none;
