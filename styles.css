@@ -7,9 +7,15 @@
 
 .container {
     display: flex;
-    width: 98%;
+    width: 100%;
     margin: auto;
     
+}
+
+.left-side {
+    width: 50%;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    padding: 50px 100px;
 }
 
 .mobile-img-container {
