@@ -5,3 +5,13 @@
     box-sizing: border-box;
 }
 
+.container {
+    display: flex;
+    width: 98%;
+    margin: auto;
+    
+}
+
+.mobile-img-container {
+    display: none;
+}
