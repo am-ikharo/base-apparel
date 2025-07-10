@@ -20,7 +20,7 @@
 }
 
 .header {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .message-container h1 {
@@ -29,6 +29,7 @@
     font-weight: 100;
     font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 5px;
+    color: hsl(0, 80%, 86%);
 }
 
 .message-container h2 {
@@ -42,6 +43,8 @@
 .message-container p {
     padding-right: 40px;
     font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+    margin-bottom: 20px;
 }
 
 .mobile-img-container {
