@@ -23,9 +23,7 @@
     margin-bottom: 80px;
 }
 
-form {
-    box-sizing: border-box;
-}
+
 
 .message-container h1 {
     text-transform: uppercase;
@@ -52,18 +50,34 @@ form {
     color: hsl(0, 27%, 67%)
 }
 
+form {
+    box-sizing: border-box;
+    position: relative;
+}
+
 .input {
-    width: 85%;
+    width: 90%;
     padding: 18px;
     border-radius: 25px;
     border: 2px solid hsl(0, 93%, 68%);
 }
 
 .submit {
-    padding: 15px 25px;
+    padding: 15px 40px;
     border-radius: 30px;
-    background-color: hsl(0, 93%, 68%);
+    background-color: hsl(0, 71%, 81%);
+    border: none;
+    position: absolute;
+    right: 15px;
 }
+
+.error {
+    position: absolute;
+    right: 30%;
+    top: 18px;
+}
+
+
 
 .mobile-img-container {
     display: none;
