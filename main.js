@@ -9,9 +9,13 @@ function runEvent(e){
     
 }
 
+function containAtSymbol(text){
+    return text.includes('@');
+}
+
 function submit(e){
     e.preventDefault()
-    if(emailInput.includes('@')){
+    if(containAtSymbol(emailInput)){
         console.log('the email is valid');
         
     }else {
