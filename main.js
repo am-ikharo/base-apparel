@@ -8,7 +8,6 @@ const containAtSymbol = (text) => {
     const regex = /@/;
     regex.text(text)
 }
-const text = textInput.target.value
 
 function getText(e){
     const text = e.target.value
