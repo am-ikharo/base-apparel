@@ -63,6 +63,10 @@ form {
     border: 2px solid hsl(0, 93%, 68%);
 }
 
+.input:focus {
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
 .submit {
     padding: 15px 40px;
     border-radius: 30px;
