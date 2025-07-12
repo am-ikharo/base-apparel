@@ -9,6 +9,12 @@ const containAtSymbol = (text) => {
     regex.text(text)
 }
 const text = textInput.target.value
-const runEvent = () => {
 
+function getText(e){
+    const text = e.target.value
+}
+
+function runEvent(){
+    console.log(text);
+    
 }
