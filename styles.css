@@ -64,7 +64,8 @@ form {
 }
 
 .input:focus {
-    border: 2px solid hsl(0, 93%, 68%);
+    border: none;
+    outline: none;
 }
 
 .submit {
