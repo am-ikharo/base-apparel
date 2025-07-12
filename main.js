@@ -1,6 +1,14 @@
 const textInput = document.querySelector("input[type=text]");
 const submitBTn = document.querySelector('.submit')
 
-textInput.addEventListener('keyup', runEvent);
-submitBTn.addEventListener('click', submit)
+submitBTn.addEventListener('click', runEvent);
 
+
+const containAtSymbol = (text) => {
+    const regex = /@/;
+    regex.text(text)
+}
+const text = textInput.target.value
+const runEvent = () => {
+
+}
