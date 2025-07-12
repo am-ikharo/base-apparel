@@ -1,8 +1,8 @@
-const textInput = document.querySelector("input[type=text]");
+const getTextInput = document.querySelector("input[type=text]");
 const submitBTn = document.querySelector('.submit')
 
 submitBTn.addEventListener('click', runEvent);
-
+getTextInput.addEventListener('keyup', getText)
 
 const containAtSymbol = (text) => {
     const regex = /@/;
@@ -10,10 +10,12 @@ const containAtSymbol = (text) => {
 }
 
 function getText(e){
-    const text = e.target.value
+    const textInput = e.target.value
+    console.log(textInput);
 }
 
-function runEvent(){
-    console.log(text);
+function runEvent(e){
+    e.preventDefault()
+    
     
 }
