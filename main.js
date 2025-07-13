@@ -1,28 +1,27 @@
-const getTextInput = document.querySelector("input[type=text]");
+const textInput = document.querySelector("input[type=text]");
 const submitBTn = document.querySelector('.submit')
+const getError = document.querySelector('.error')
 
 submitBTn.addEventListener('click', runEvent);
-getTextInput.addEventListener('keyup', getText)
+textInput.addEventListener('keyup', getText)
 
 function containAtSymbol(text) {
-    return text.includes('@');
-}
-
-const txt = 'hello@world';
-if(containAtSymbol(txt)){
-    console.log("contain @")
-}else{
-    console.log("doesnt contain @");
-    
+    return text.indexOf('@') !== -1;
 }
 
 function getText(e){
     const textInput = e.target.value
-    console.log(textInput);
+    return textInput
+    
 }
 
 function runEvent(e){
     e.preventDefault()
-    
+    const txt = textInput.value
+    if(containAtSymbol(txt)){
+        getError.style.display = 'none'
+    }else{
+        getError.style.display = 'block'
+    }
     
 }
