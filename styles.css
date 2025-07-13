@@ -15,7 +15,7 @@
 .left-side {
     width: 55%;
     background-image: url(./images/bg-pattern-desktop.svg);
-    padding: 70px 150px;
+    padding: 70px 170px;
     
 }
 
@@ -45,6 +45,7 @@
     font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 5px;
     text-wrap:inherit;
+    padding: 0px 100px 0px 0px;
 }
 
 .message-container p {
@@ -87,7 +88,7 @@ form {
 
 .error {
     position: absolute;
-    right: 26%;
+    right: 120px;
     top: 15px;
     display: none;
 }
@@ -98,6 +99,7 @@ form {
     font-size: 15px;
     color: hsl(0, 93%, 68%);
     font-family:Arial, Helvetica, sans-serif;
+    display: none;
 }
 
 .right-side {

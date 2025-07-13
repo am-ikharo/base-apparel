@@ -1,6 +1,7 @@
 const textInput = document.querySelector("input[type=text]");
 const submitBTn = document.querySelector('.submit')
 const getError = document.querySelector('.error')
+const getErrorMessage = document.querySelector('.error-message')
 
 submitBTn.addEventListener('click', runEvent);
 textInput.addEventListener('keyup', getText)
@@ -20,8 +21,10 @@ function runEvent(e){
     const txt = textInput.value
     if(containAtSymbol(txt)){
         getError.style.display = 'none'
+        getErrorMessage.style.display = 'none'
     }else{
         getError.style.display = 'block'
+        getErrorMessage.style.display = 'block'
     }
     
 }
