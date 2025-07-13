@@ -5,8 +5,7 @@ submitBTn.addEventListener('click', runEvent);
 getTextInput.addEventListener('keyup', getText)
 
 function containAtSymbol(text) {
-    const regex = /@/;
-    regex.test(text)
+    return text.includes('@');
 }
 
 const txt = 'hello@world';
