@@ -13,9 +13,9 @@
 }
 
 .left-side {
-    width: 55%;
+    width: 65%;
     background-image: url(./images/bg-pattern-desktop.svg);
-    padding: 70px 170px;
+    padding: 70px 250px;
     
 }
 
@@ -25,7 +25,6 @@
 
 .message-container {
     width: 100%;
-    text-wrap:initial;
 }
 
 .message-container h1 {
@@ -116,4 +115,120 @@ form {
 .mobile-img-container {
     display: none;
     
+}
+
+@media (max-width: 1200px) {
+    .container {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        
+    }
+
+    .left-side {
+        width: 50%;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        padding: 35px 70px;
+        
+        
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: flex;
+        width: 100%;
+        margin: 0px;
+        
+    }
+
+    .left-side {
+        width: 100%;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        padding: 0px;
+        
+    }
+
+    .mobile-img-container {
+        display: block; 
+        width: 100%;
+    }
+
+    .mobile-img-container img {
+        width: 100%;
+    }
+
+    .right-side {
+        display: none;
+        width: 0%;
+        
+    }
+
+    .header {
+        margin: 30px ;
+        
+    }
+    .message-container h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 100;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+        color: hsl(0, 27%, 67%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .message-container h2 {
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 150;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-bottom: 5px;
+        padding: 0px 100px 0px 100px;
+        text-align: center;
+    }
+    .message-container p {
+        padding: 10px 30px;
+        font-family:Arial, Helvetica, sans-serif;
+        line-height: 1.7em;
+        margin-bottom: 20px;
+        color: hsl(0, 27%, 67%);
+        text-align: center;
+    }
+
+    form {
+        box-sizing: border-box;
+        position: relative;
+        margin: auto;
+        text-align: center;
+    }
+
+    .input {
+        width: 90%;
+        padding: 18px;
+        border-radius: 25px;
+        border: 2px solid hsl(0, 93%, 68%);
+    }
+
+    .input:focus {
+        outline: none;
+    }
+
+    .submit {
+        padding: 15px 40px;
+        border-radius: 30px;
+        background-color: hsl(0, 71%, 81%);
+        border: none;
+        position: absolute;
+        right: 15px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+
+
+
 }
