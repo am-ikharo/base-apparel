@@ -4,9 +4,17 @@ const submitBTn = document.querySelector('.submit')
 submitBTn.addEventListener('click', runEvent);
 getTextInput.addEventListener('keyup', getText)
 
-const containAtSymbol = (text) => {
+function containAtSymbol(text) {
     const regex = /@/;
-    regex.text(text)
+    regex.test(text)
+}
+
+const txt = 'hello@world';
+if(containAtSymbol(txt)){
+    console.log("contain @")
+}else{
+    console.log("doesnt contain @");
+    
 }
 
 function getText(e){
