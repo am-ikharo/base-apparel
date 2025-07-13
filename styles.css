@@ -93,7 +93,9 @@ form {
 }
 
 .error-message {
-    
+    margin: 5px;
+    padding: 10px 0px 0px 25px;
+    font-size: 15px;
 }
 
 .right-side {
